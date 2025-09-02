@@ -1,0 +1,13 @@
+{
+  "name": "another-deep-package",
+  "version": "2.5.0",
+  "description": "Another deep package referenced via link: by my-local-package",
+  "dependencies": {
+    "react": "^18.2.0",
+    "another-deep-missing-pkg": "^1.5.0",
+    "link-github-hijack": "github:fake-link-org/another-missing-repo"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
