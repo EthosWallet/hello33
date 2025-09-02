@@ -1,11 +1,13 @@
 {
   "name": "my-local-package",
   "version": "1.0.0", 
-  "description": "Referenced package.json with vulnerabilities for testing",
+  "description": "Referenced package.json with vulnerabilities and additional references",
   "dependencies": {
     "lodash": "^4.17.21",
     "nonexistent-npm-package-12345": "^1.0.0",
-    "missing-company-internal-lib": "github:fake-org-123/missing-repo-456"
+    "missing-company-internal-lib": "github:fake-org-123/missing-repo-456",
+    "deep-nested-package": "file:../deep-nested-package",
+    "another-deep-package": "link:../another-deep-package"
   },
   "devDependencies": {
     "typescript": "^5.0.0"
