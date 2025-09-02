@@ -1,21 +1,14 @@
 {
-  "name": "test-file-dependencies",
+  "name": "test-root-package",
   "version": "1.0.0",
-  "description": "Test package for file: dependency scanning",
+  "description": "Root package.json that references packages via file: and link:",
   "dependencies": {
     "express": "^4.18.0",
-    "@company/internal-utils": "file:../libs/internal-utils",
-    "local-shared-lib": "file:./packages/shared",
-    "missing-local-package": "file:../nonexistent-package",
+    "my-local-package": "file:../my-local-package",
+    "my-linked-package": "link:../my-linked-package",
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "jest": "^29.0.0",
-    "@test/missing-dev-tool": "file:../../tools/missing-dev-tool",
-    "internal-build-scripts": "file:../build-tools/scripts"
-  },
-  "workspaces": [
-    "packages/*",
-    "libs/*"
-  ]
+    "jest": "^29.0.0"
+  }
 }
