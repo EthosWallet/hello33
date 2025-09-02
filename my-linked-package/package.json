@@ -1,0 +1,13 @@
+{
+  "name": "my-linked-package",
+  "version": "1.5.0",
+  "description": "Package referenced via link: with different vulnerabilities",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "another-fake-npm-package-999": "^2.1.0",
+    "linked-github-repo": "github:another-fake-org/missing-linked-repo"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  }
+}
