@@ -1,0 +1,13 @@
+{
+  "name": "my-local-package",
+  "version": "1.0.0", 
+  "description": "Referenced package.json with vulnerabilities for testing",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "nonexistent-npm-package-12345": "^1.0.0",
+    "missing-company-internal-lib": "github:fake-org-123/missing-repo-456"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
