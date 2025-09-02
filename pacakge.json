@@ -1,0 +1,21 @@
+{
+  "name": "test-file-dependencies",
+  "version": "1.0.0",
+  "description": "Test package for file: dependency scanning",
+  "dependencies": {
+    "express": "^4.18.0",
+    "@company/internal-utils": "file:../libs/internal-utils",
+    "local-shared-lib": "file:./packages/shared",
+    "missing-local-package": "file:../nonexistent-package",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "@test/missing-dev-tool": "file:../../tools/missing-dev-tool",
+    "internal-build-scripts": "file:../build-tools/scripts"
+  },
+  "workspaces": [
+    "packages/*",
+    "libs/*"
+  ]
+}
